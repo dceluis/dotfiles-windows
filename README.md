@@ -96,28 +96,6 @@ Setting up a new Windows machine often requires installation of common packages,
 .\deps.ps1
 ```
 
-## Customization
-
-## Forking your own version
-
-These scripts are for my preferences; your preferences may be different.
-
-This repository is built around how I use Windows, which is predominantly in a VM hosted on macOS. As such, things like VNC, FileZilla, or Skype are not installed, as they are available to me on the macOS side, installed by my [OS X dotfiles](https://github.com/jayharris/dotfiles). If you are using Windows as your primary OS, you may want a different configuration that reflects that, and I recommend you [fork this repository](https://github.com/jayharris/dotfiles-windows/fork).
-
-If you do fork for your own custom configuration, you will need to touch a few files to reference your own repository, instead of mine.
-
-Within `/setup/install.ps1`, modify the Repository variables.
-```posh
-$account = "jayharris"
-$repo    = "dotfiles-windows"
-$branch  = "master"
-```
-
-Finally, be sure to reference your own repository in the git-free installation command.
-```bash
-iex ((new-object net.webclient).DownloadString('https://raw.github.com/$account/$repo/$branch/setup/install.ps1'))
-```
-
 ## Feedback
 
 Suggestions/improvements are
