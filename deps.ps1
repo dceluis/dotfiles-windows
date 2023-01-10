@@ -37,6 +37,8 @@ winget install Google.Chrome                             --silent --accept-packa
 winget install Mozilla.Firefox                           --silent --accept-package-agreements
 #winget install Opera.Opera                               --silent --accept-package-agreements
 
+winget install Zoom.Zoom                                 --silent --accept-package-agreements
+
 # dev tools and frameworks
 winget install Microsoft.PowerShell                      --silent --accept-package-agreements
 #winget install Microsoft.SQLServer.2019.Developer        --silent --accept-package-agreements
